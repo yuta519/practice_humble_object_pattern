@@ -11,11 +11,11 @@ export function get_message(index) {
     "Python is the most reasonable language",
     "Ruby is the spirit of Japanese",
   ];
-  return index >= messages.length ? "Hello World" : messages[index];
+  return messages[index];
 }
 
 export function say_random_message() {
-  const index = random_int(6, 0);
+  const index = random_int(5, 0);
   return get_message(index);
 }
 
